@@ -8,24 +8,17 @@ import Service from "./components/Service/Service";
 import Footer from "./components/Footer/Footer";
 
 function App() {
-  const [isMobile, setIsMobile] = useState(false);
   const [windowWidth, setWindowWidth] = useState(1400);
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
-      setIsMobile(window.innerWidth < 768);
     };
     window.addEventListener("resize", handleResize);
-    setIsMobile(window.innerWidth < 768);
 
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
-  useEffect(() => {
-    console.log(windowWidth);
-  }, [windowWidth]);
   return (
     <>
       <BrowserRouter>
