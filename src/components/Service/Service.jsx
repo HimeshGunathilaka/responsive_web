@@ -54,6 +54,12 @@ export default function Service({ windowWidth }) {
                   : windowWidth <= 1200 && windowWidth > 768
                   ? "346px"
                   : "275px",
+              width:
+                windowWidth < 1400 && windowWidth > 1200
+                  ? "1064px"
+                  : windowWidth <= 1200 && windowWidth > 768
+                  ? "896px"
+                  : "688px",
             }}
           >
             <img
@@ -110,6 +116,12 @@ export default function Service({ windowWidth }) {
                   : windowWidth <= 1200 && windowWidth > 768
                   ? "346px"
                   : "275px",
+              width:
+                windowWidth < 1400 && windowWidth > 1200
+                  ? "1064px"
+                  : windowWidth <= 1200 && windowWidth > 768
+                  ? "896px"
+                  : "688px",
             }}
           >
             <div className="d-flex col flex-column service-desc justify-content-center align-items-start">
