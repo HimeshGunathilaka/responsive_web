@@ -58,6 +58,8 @@
     width: auto;
     height: auto;
     gap: 28px;
+    padding: 24px;
+    border-radius: 7px;
 }
 
 .question-container h3{

@@ -15,32 +15,19 @@ export default function QuestionCard({ title, body, windowWidth }) {
     setExpand(value);
   };
   return (
-    <div
-      className="question-card-wrapper d-flex flex-column justify-content-center align-items-center"
-      style={{
-        height:
-          expand != true
-            ? windowWidth < 1400 && windowWidth > 768
-              ? "76px"
-              : windowWidth < 768 && windowWidth > 375
-              ? "104px"
-              : windowWidth <= 375
-              ? "160px"
-              : "76px"
-            : "auto",
-      }}
-    >
+    <div className="question-card-wrapper d-flex flex-column justify-content-center align-items-center">
       <div
         className="d-flex flex-row justify-content-between align-items-start"
         style={{
           width: "100%",
-          height: windowWidth < 1400 && windowWidth > 768 ? "28px" : "auto",
+          height: "auto",
         }}
       >
         <h3
           style={{
             color: color,
             fontSize: windowWidth < 1400 && windowWidth > 768 ? "22px" : "20px",
+            lineHeight: "auto",
           }}
         >
           {title}
@@ -67,7 +54,21 @@ export default function QuestionCard({ title, body, windowWidth }) {
           />
         )}
       </div>
-      {expand ? <div style={{ marginTop: "10px" }}>{body}</div> : <></>}
+      {expand ? (
+        <div
+          style={{
+            marginTop: "10px",
+            color: "#6F6C90",
+            fontWeight: "400",
+            fontSize: "18px",
+            lineHeight: "30px",
+          }}
+        >
+          {body}
+        </div>
+      ) : (
+        <></>
+      )}
     </div>
   );
 }
