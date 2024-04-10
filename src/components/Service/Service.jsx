@@ -149,7 +149,7 @@ export default function Service({ windowWidth }) {
               ? "846px"
               : windowWidth <= 1200 && windowWidth > 1000
               ? "896px"
-              : windowWidth <= 1000 && windowWidth > 768
+              : windowWidth <= 1000 && windowWidth >= 768
               ? "686px"
               : "334px",
           height: "auto",
