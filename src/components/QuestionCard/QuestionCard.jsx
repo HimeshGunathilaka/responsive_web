@@ -22,7 +22,7 @@ export default function QuestionCard({ title, body, windowWidth }) {
           expand != true
             ? windowWidth < 1400 && windowWidth > 768
               ? "76px"
-              : windowWidth < 768 && windowWidth > 375
+              : windowWidth <= 768 && windowWidth > 375
               ? "104px"
               : windowWidth <= 375
               ? "160px"
