@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../Service/Service.css";
 import icon_1 from "../../assets/image_2.png";
 import icon_2 from "../../assets/image_1.png";

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../Footer/Footer.css";
 import icon from "../../assets/White_Logo.png";
 
