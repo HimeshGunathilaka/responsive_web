@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../Intro/Intro.css";
 
 export default function Intro({ windowWidth }) {

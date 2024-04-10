@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../QuestionCard/QuestionCard.css";
 import { Dash, Plus } from "react-bootstrap-icons";
 

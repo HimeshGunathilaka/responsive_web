@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Icon from "../../assets/White_Logo.png";
 import "../Header/Header.css";
 import { List, X } from "react-bootstrap-icons";

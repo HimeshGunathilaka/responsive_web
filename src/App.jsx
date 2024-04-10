@@ -9,7 +9,14 @@ import Footer from "./components/Footer/Footer";
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(1400);
+
+  function handleWindowWidth() {
+    console.log("works");
+    setWindowWidth(window.innerWidth);
+  }
+
   useEffect(() => {
+    handleWindowWidth();
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
@@ -19,10 +26,12 @@ function App() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   return (
     <>
       <BrowserRouter>
         <div className="App container-fluid">
+          {windowWidth}
           <Header windowWidth={windowWidth} />
           <Intro windowWidth={windowWidth} />
           {windowWidth <= 768 ? (
