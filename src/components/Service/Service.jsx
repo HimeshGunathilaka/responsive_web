@@ -57,9 +57,11 @@ export default function Service({ windowWidth }) {
               width:
                 windowWidth < 1400 && windowWidth > 1200
                   ? "1064px"
-                  : windowWidth <= 1200 && windowWidth > 768
+                  : windowWidth <= 1200 && windowWidth > 1000
                   ? "896px"
-                  : "688px",
+                  : // : windowWidth <= 1200 && windowWidth > 768
+                    // ? "896px"
+                    "688px",
             }}
           >
             <img
@@ -119,7 +121,7 @@ export default function Service({ windowWidth }) {
               width:
                 windowWidth < 1400 && windowWidth > 1200
                   ? "1064px"
-                  : windowWidth <= 1200 && windowWidth > 768
+                  : windowWidth <= 1200 && windowWidth > 1000
                   ? "896px"
                   : "688px",
             }}
@@ -142,6 +144,14 @@ export default function Service({ windowWidth }) {
 
       <div
         style={{
+          width:
+            windowWidth < 1400 && windowWidth > 1200
+              ? "846px"
+              : windowWidth <= 1200 && windowWidth > 1000
+              ? "896px"
+              : windowWidth <= 1000 && windowWidth > 768
+              ? "686px"
+              : "334px",
           height: "auto",
         }}
         className="question-container d-flex flex-column justify-content-center align-items-center"
